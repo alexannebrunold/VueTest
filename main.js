@@ -4,7 +4,7 @@ Vue.component("product", {
 	props: {
 		premium: {
 			type: Boolean,
-			required: true,
+			required: false,
 		},
 	},
 	template: `
@@ -33,7 +33,6 @@ Vue.component("product", {
 					</button>
 
 					<button v-on:click="removeAddToCart">Remove add</button>
-
 		<products-tabs :reviews="reviews"></products-tabs>
 		
 
@@ -85,7 +84,7 @@ Vue.component("product", {
 			return this.variants[this.selectedVariant].variantQuantity;
 		},
 		shipping() {
-			if (this.premium) {
+			if (!this.premium) {
 				return "Free";
 			}
 			return 2.99;
