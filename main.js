@@ -50,13 +50,13 @@ Vue.component("product", {
 				{
 					variantID: 2234,
 					variantColor: "Green",
-					variantImage: "vmSocks-green-onWhite.jpg",
+					variantImage: "assets/vmSocks-green-onWhite.jpg",
 					variantQuantity: 10,
 				},
 				{
 					variantID: 2254,
 					variantColor: "Blue",
-					variantImage: "vmSocks-blue-onWhite.jpg",
+					variantImage: "assets/vmSocks-blue-onWhite.jpg",
 					variantQuantity: 0,
 				},
 			],
